@@ -5,7 +5,7 @@ Core error interface in Go
 ### Install
 
 ```shell
-go get github.com/prongbang/gorerror
+go get github.com/prongbang/goerror
 ```
 
 ### How to use
