@@ -4,6 +4,20 @@ import (
 	"net/http"
 )
 
+type Error struct {
+	Body
+}
+
+func (e *Error) Error() string {
+	return e.Message
+}
+
+func NewError(body Body) error {
+	return &Error{
+		Body: body,
+	}
+}
+
 type UseProxy struct {
 	Body
 }
